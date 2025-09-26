@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>MuzikFlow - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close-btn">
+                <img class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="browse.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="song-list">
+                    <ul></ul>
+                </div>
+                <div class="footer">
+                    <div><a href="#">Legal</a></div>
+                    <div><a href="#">Safety & Privacy Center</a></div>
+                    <div><a href="#">Privacy Policy</a></div>
+                    <div><a href="#">Cookies</a></div>
+                    <div><a href="#">About Ads</a></div>
+                    <div><a href="#">Accessibility</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img class="invert hamburger" src="hamburger.svg" alt="menu">
+                </div>
+                <div class="button">
+                    <a href="#" class="signup-link">Sign up</a>
+                    <a href="#" class="login-btn">Log in</a>
+                </div>
+            </div>
+            <div class="Trending-List">
+                <div class="list-container">
+                    <div class="list-header">
+                        <h1>Trending List</h1>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="nav-arrows">
+                        <button class="arrow-btn left-arrow">&lt;</button>
+                        <button class="arrow-btn right-arrow">&gt;</button>
+                    </div>
+
+
+                    <div class="card-container">
+                        <div class="card" data-song="Thodi Si Daaru">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02eb0516ec1c97c3cc97f4cb61" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Thodi Si Daaru</h2>
+                            <p>AP Dhillon, Shreya Ghoshal </p>
+                        </div>
+                        <div class="card" data-song="AZUL">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02203e6495a78184970ab274ac" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>AZUL</h2>
+                            <p>Guru Randhawa, Gurjit Gill, Lavish Dhiman </p>
+                        </div>
+                        <div class="card" data-song="Sapphire - Ed Sheeren">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e025a3f69aab66f912e54529606" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Sapphire (feat. Arijit Singh)</h2>
+                            <p>Ed Sheeran, Arijit Singh </p>
+                        </div>
+                        <div class="card" data-song="Oh Mama Tetema">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02c019f17563fcc8cc9db655c2" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Oh Mama! TETEMA</h2>
+                            <p>Rayvanny, Vishal Mishra, Shreya Ghoshal, Nora Fatehi</p>
+                        </div>
+                        <div class="card" data-song="Powerhouse">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02ce3eecb6ce4eb1dfb6e06399" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Powerhouse</h2>
+                            <p>Anirudh Ravichander, Arivu </p>
+                        </div>
+                        <div class="card" data-song="Galiyon Ke Ghalib">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02bc0ec443e91e4d89c893dd7f" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Galiyon Ke Ghalib</h2>
+                            <p>Badshah</p>
+                        </div>
+                        <div class="card" data-song="Tum Ho Toh">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02d998c880f085f08c7ddeeafc" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Tum Ho Toh (From "Saiyaara")</h2>
+                            <p>Vishal Mishra </p>
+                        </div>
+                        <div class="card" data-song="Mf Gabhru">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2736c6cf43903b683b6c2d38eea" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>MF Gabhru!</h2>
+                            <p>Karan Aujla</p>
+                        </div>
+                        <div class="card" data-song="Ishq Bawla">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02f42805148e916145f858318b" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Ishq Bawla</h2>
+                            <p>Dhanda Nyoliwala, Grewal</p>
+                        </div>
+                        <div class="card" data-song="Raat Ke Shikari">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0273db28dd510b75b2b676b9b5" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Raat Ke Shikari</h2>
+                            <p>Masoom Sharma</p>
+                        </div>
+                        <div class="card" data-song="Lalkara">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02cb2f9520171129a3df7a241a" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Lalkara</h2>
+                            <p>Diljit Dosanjh, Sultaan </p>
+                        </div>
+                        <div class="card" data-song="Tension">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616d00001e023a55de8958d11773a33639d9" alt="">
+                                <div class="play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#000">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h2>Tension</h2>
+                            <p>Dhanda Nyoliwala</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- artist details  -->
+            <div class="artist-list">
+                <div class="list-container">
+                    <div class="list-header">
+                        <h1>Popular artists</h1>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="nav-arrows">
+                        <button class="arrow-btn left-arrow">&lt;</button>
+                        <button class="arrow-btn right-arrow">&gt;</button>
+                    </div>
+                    <div class="card-container">
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://book-my-singer.s3.ap-south-1.amazonaws.com/website-assets/artist/Pritam+Chakraborty/Hire+Pritam+Chakraborty.webp"
+                                    alt="Pritam" class="artist-image">
+                            </div>
+                            <h2>Pritam</h2>
+                            <p>Artist</p>
+                        </div>
+
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                    alt="A.R. Rahman" class="artist-image">
+                            </div>
+                            <h2>A.R. Rahman</h2>
+                            <p>Artist</p>
+                        </div>
+
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                                    alt="Arijit Singh" class="artist-image">
+                            </div>
+                            <h2>Arijit Singh</h2>
+                            <p>Artist</p>
+                        </div>
+
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e"
+                                    alt="Sachin-Jigar" class="artist-image">
+                            </div>
+                            <h2>Sachin-Jigar</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                                    alt="Vishal-Shekhar" class="artist-image">
+                            </div>
+                            <h2>Vishal-Shekhar</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                                    alt="Atif Aslam" class="artist-image">
+                            </div>
+                            <h2>Atif Aslam</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f"
+                                    alt="Honey Singh" class="artist-image">
+                            </div>
+                            <h2>Honey Singh</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW7G9CTDzHGPrxAK9Q7c8JrQzZl0zmBKt8lA&s"
+                                    alt="Udit Narayan" class="artist-image">
+                            </div>
+                            <h2>Udit Narayan</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4sd11S_Q3-pFJI3Hw0pIIoH57NNQ1_1dtyw&s"
+                                    alt="AP Dhillon" class="artist-image">
+                            </div>
+                            <h2>AP Dhillon</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="radio-list">
+                <div class="list-header">
+                    <h1>Popular radio</h1>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card radio-card">
+                        <div class="img-wrapper">
+                            <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en" alt="Arijit Singh" class="radio-image">
+                            <div class="radio-tag">RADIO</div>
+                        </div>
+                        <h2>Arijit Singh</h2>
+                        <p>With Sachin-Jigar, Jeet Gannguli, Sach...</p>
+                    </div>
+            
+                    <div class="card radio-card">
+                        <div class="img-wrapper">
+                            <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en" alt="KK" class="radio-image">
+                            <div class="radio-tag">RADIO</div>
+                        </div>
+                        <h2>KK</h2>
+                        <p>With Pritam, Mustafa Zahid, Atif Aslam an...</p>
+                    </div>
+            
+                    <div class="card radio-card">
+                        <div class="img-wrapper">
+                            <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en" alt="Shreya Ghoshal" class="radio-image">
+                            <div class="radio-tag">RADIO</div>
+                        </div>
+                        <h2>Shreya Ghoshal</h2>
+                        <p>With A.R. Rahman, Salim-Sulaiman, Aja...</p>
+                    </div>
+            
+                    <div class="card radio-card">
+                        <div class="img-wrapper">
+                            <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en" alt="Alka Yagnik" class="radio-image">
+                            <div class="radio-tag">RADIO</div>
+                        </div>
+                        <h2>Alka Yagnik</h2>
+                        <p>With Kumar Sanu, Vinod Rathod, Udit...</p>
+                    </div>
+                    <div class="card radio-card">
+                        <div class="img-wrapper">
+                            <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4PULA4EFzYTrxYvOVlwpiQ/en" alt="Sidhu Moose Wala" class="radio-image">
+                            <div class="radio-tag">RADIO</div>
+                        </div>
+                        <h2>Sidhu Moose Wala</h2>
+                        <p>With Talha, Dhillon, kr$na...</p>
+                    </div>
+                    
+                    </div>
+            </div>
+
+            <div class="playbar">
+                <div class="seek-bar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="song-info"></div>
+                    <div class="heart-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.39 20.87a.696.696 0 0 1-.78 0C9.764 19.637 2 14.15 2 8.973c0-6.68 7.85-7.75 10-3.25 2.15-4.5 10-3.43 10 3.25 0 5.178-7.764 10.664-9.61 11.897z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="song-btn">
+                        <img id="previous" class="invert" src="previous.svg" alt="previous">
+                        <img id="play" class="invert" src="play.svg" alt="play">
+                        <img id="next" class="invert" src="next.svg" alt="next">
+                    </div>
+                    <div class="song-time"></div>
+                    <div class="volume-control">
+                        <img id="volume-icon" class="invert" src="volume.svg" alt="volume">
+                        <input id="volume-slider" type="range" min="0" max="100" value="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+
+</html>
