@@ -11,7 +11,7 @@ function formatTime(seconds) {
 async function getSongs() {
     try {
         // This URL points directly to your local server and folder
-        let a = await fetch("songs/");
+        let a = await fetch("./songs/");
         
         let response = await a.text();
         let div = document.createElement("div");
